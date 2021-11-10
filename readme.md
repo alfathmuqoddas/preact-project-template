@@ -1,9 +1,5 @@
-# Preact no-build tools template
+# Preact and React no npm template
 
-This template is intended to create preact project without any build tools like npm and webpack
-Just using plain html and es6 module
-to develop using this template you must using a web server or local server
-you can use Apache or https-server
-and because it doesn't use any webtools it doesn't use a jsx instead it using htm (Hyperscript Tagged Markup)
-is very similar to jsx but without any build step
-for further htm documentation you can visit [htm github repo](https://github.com/developit/htm)
+In this repo you can find Preact and React plain html.
+It doesn't need any build tools, just edit it and open in browser.
+One caveat is you can't use module in the React template, where you can create component separately and import it in one parent element to be rendered.
