@@ -14,21 +14,35 @@
     
     <div id="app" style="font-family: 'Inter', sans-serif;"></div>
     <script type="module">
-    	import { h, Component, render } from 'https://unpkg.com/preact?module';
-      import htm from 'https://unpkg.com/htm?module';
-
-      const html = htm.bind(h);
+    	import { html, render, useState } from '//unpkg.com/htm/preact/standalone.mjs';
+      import Bar, { shit, TestState } from './src/Bar.js';
 
   		function App() {
-
   			return html`
   				<div>
-            This is preact
+            This is preact ${shit}
           </div>
   			`;
   		}
 
-		render(html`<${App} />`, document.body);
+      function Foo() {
+        return html`
+          <div>This is Foo</div>
+        `
+      }
+
+      function All() {
+        return html`
+          <div>
+            <${App} />
+            <${Foo} />
+            <${Bar} />
+            <${TestState} />
+          </div>
+        `
+      }
+
+		render(html`<${All} />`, document.querySelector('#app'));
 	</script>
   </body>
 </html>
