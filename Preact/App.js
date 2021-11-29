@@ -2,8 +2,9 @@ import { html, render, useState } from '//unpkg.com/htm/preact/standalone.mjs';
 
 export default function App() {
 	return html`
-	<div>
+	  <div>
       <h1 className="text-center">This is preact</h1>
+      <${Foo} />
     </div>
 	`;
 }

@@ -4,7 +4,7 @@ export default function Bar() {
 
 	return html`
 		<div>
-			Imported Module Bar
+			Imported Module Bar test
 		</div>
 	`
 }
