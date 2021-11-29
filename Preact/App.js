@@ -1,10 +1,12 @@
 import { html, render, useState } from '//unpkg.com/htm/preact/standalone.mjs';
+import Bar from './src/Bar.js';
 
 export default function App() {
 	return html`
-	  <div>
-      <h1 className="text-center">This is preact</h1>
+	  <div className="container">
+      <h1 className="text-center my-5">This is preact without nodejs</h1>
       <${Foo} />
+      <${Bar} />
     </div>
 	`;
 }
